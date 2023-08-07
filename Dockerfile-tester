@@ -1,6 +1,7 @@
 FROM debian:11
 RUN apt update && apt -y install git build-essential
-COPY ./embed /test_lua/embed
+#COPY ./embed /test_lua/embed
+COPY ./executable /test_lua/executable
 COPY ./min_moyenne_max.lua /test_lua/min_moyenne_max.lua
-COPY ./liblua5.1.so.0 /test_lua/liblua5.1.so.0
-ENV LD_LIBRARY_PATH /test_lua
+#COPY ./liblua5.1.so.0 /test_lua/liblua5.1.so.0
+#ENV LD_LIBRARY_PATH /test_lua
