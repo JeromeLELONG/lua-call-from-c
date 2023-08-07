@@ -8,6 +8,11 @@ build-lua-from-c:
 #   	gcc -o embed lua_from_c_2.c -I/usr/include/lua5.1 -L/usr/lib/lua5.1 -llua5.1 -lliblua5.1
 #	gcc -o embed lua_from_c.c -I/usr/local/include -L/usr/local/lib -llua -llualib
 
+build-lua-from-c-3: 
+	gcc -o embed_3 lua_from_c_3.c -I/usr/include/lua5.1 -L/usr/lib/lua5.1 -llua5.1
+#   	gcc -o embed lua_from_c_2.c -I/usr/include/lua5.1 -L/usr/lib/lua5.1 -llua5.1 -lliblua5.1
+#	gcc -o embed lua_from_c.c -I/usr/local/include -L/usr/local/lib -llua -llualib
+
 build-lua-from-c-with-lua-api: 
 	gcc -O2 -Wall    -c -o lapi.o lapi.c
 	gcc -O2 -Wall    -c -o lcode.o lcode.c

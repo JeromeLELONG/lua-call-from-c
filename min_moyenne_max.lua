@@ -25,6 +25,6 @@ function min_moyenne_max(...)
   end
   -- ici, nous n’avons pas besoin de la valeur `moyenne`
   -- nous utilisons `_` en tant que balise
-  min, _, max = min_moyenne_max(78, 34, 91, 7, 28)
-  print("Le minimum et le maximum des nombres sont", min, max)
-  print("--I am using Lua from within C--")
+  -- min, _, max = min_moyenne_max(78, 34, 91, 7, 28)
+  -- print("Le minimum et le maximum des nombres sont", min, max)
+  -- print("--I am using Lua from within C--")
